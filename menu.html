@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Navigation</title>
+  <style>
+   /* Reset */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #e9ecef;
+}
+
+/* Menu bar */
+.menu {
+  text-align: center;
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* Top-level menu */
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+/* Main buttons */
+.menu > li > a {
+  display: block;
+  padding: 14px 22px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Underline animation */
+.menu > li > a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 0%;
+  height: 2px;
+  background: #00c6ff;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+
+.menu > li > a:hover::after {
+  width: 60%;
+}
+
+/* Hover effect */
+.menu > li > a:hover {
+  color: #00c6ff;
+  transform: translateY(-2px);
+}
+
+/* Dropdown */
+.menu li ul {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  min-width: 200px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* Show dropdown smoothly */
+.menu li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+/* Dropdown items */
+.menu li ul li a {
+  padding: 12px;
+  color: #2c3e50;
+  background: #fff;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Dropdown hover */
+.menu li ul li a:hover {
+  background: #2980b9;
+  color: white;
+  padding-left: 18px;
+}
+
+/* Add subtle divider */
+.menu li ul li {
+  border-bottom: 1px solid #eee;
+}
+
+.menu li ul li:last-child {
+  border-bottom: none;
+}
+ </style>
+</head>
+<body>
+
+   <h1 style="text-align: center;">School Management System</h1>
+
+  
+  <ul class="menu">
+    <li><a href="#">Grade</a>
+    <ul>
+        <li><a href="grade.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Course</a>
+    <ul> 
+        <li><a href="course.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Teacher</a>
+      <ul>
+        <li><a href="teacher.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Classroom</a>
+    <ul> 
+        <li><a href="classroom.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Parent</a>
+    <ul> 
+        <li><a href="parent.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Student</a>
+    <ul> 
+        <li><a href="student.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Classroom student</a>
+    <ul> 
+        <li><a href="class_room_student.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Attendance</a>
+    <ul> 
+        <li><a href="attendance.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Exam type</a>
+    <ul> 
+        <li><a href="exam_type.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Exam</a>
+    <ul> 
+        <li><a href="exam.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Exam result</a>
+    <ul> 
+        <li><a href="exam_result.php">Open</a></li>
+        <li><a href="spsearch.html">Special Search</a></li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
