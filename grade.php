@@ -247,6 +247,7 @@ input[type="submit"]:hover, input[type="button"]:hover {
 
 echo '<form name=f method=post action=grade.php>
 <body>
+<h2 align="center">GRADE </h2>
 <table border=1 align=center>
 <tr>
     <td>Grade ID</td>
