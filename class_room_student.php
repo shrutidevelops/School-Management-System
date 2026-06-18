@@ -223,6 +223,7 @@ input[type="submit"]:hover, input[type="button"]:hover {
 echo '
 <form name=f method=post action=class_room_student.php>
 <body>
+<h2 align="center">CLASSROOM STUDENT </h2>
 <table border=1 align=center>
 <tr>
     <td>Classroom ID</td>
