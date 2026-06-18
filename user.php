@@ -48,6 +48,7 @@ if(isset($_REQUEST["b1"]))
 
 echo "<form name=f method=post action=user.php>
 <body>
+<h2 align="center">USER</h2>
 <table border='1' align='center'>
 <tr>
     <td>LOGIN ID</td>
