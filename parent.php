@@ -273,6 +273,7 @@ input[type="submit"]:hover, input[type="button"]:hover {
 
 echo '<form name=f method=post action=parent.php>
 <body>
+<h2 align="center">PARENT</h2>
 <table border=1 align=center>
 <tr>
     <td>Parent ID</td>
